@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-mkdir -p output
+mkdir -p output/tjanstepension
 inkomst=$(cat input/lon/res.txt)
 res=$(echo "scale=0; (${inkomst} * 0.045) / 1" | bc -l)
-echo ${res} > output/tjanstepension.txt
+echo ${res} > output/tjanstepension/res.txt
